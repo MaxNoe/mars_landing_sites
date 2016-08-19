@@ -1,0 +1,45 @@
+Curiosity:
+  latitude: -4.5895
+  longitude: 137.4417
+
+Spirit:
+  latitude: -14.568
+  longitude: 175.47
+  lat_offset: 0 
+  lon_offset: -5
+  ha_align: 'right'
+
+Opportunity:
+  latitude: -1.9462
+  longitude: 354.47
+
+Phoenix:
+  latitude: 68.22
+  longitude: 234.25
+  lon_offset: -15
+  lat_offset: -5
+
+Sojourner:
+  latitude: 19.095
+  longitude: 326.747
+  lat_offset: 0 
+  lon_offset: 5
+  ha_align: 'left'
+
+"Viking 1":
+  latitude: 22.269
+  longitude: 312.049
+
+"Viking 2":
+  latitude: 47.668
+  longitude: 134.28
+  lon_offset: 10
+
+"Mars Polar Lander":
+  latitude: -76
+  longitude: -195
+  lat_offset: 2 
+  lon_offset: -20
+  ha_align: 'right'
+  va_align: 'bottom'
+  color: 'lightgray'
