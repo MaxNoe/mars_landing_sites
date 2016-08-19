@@ -22,12 +22,20 @@ ax = fig.add_subplot(1, 1, 1, projection=proj)
 with open('sites.yaml') as f:
     sites = yaml.safe_load(f)
 
-img = imread('marssurface.jpg')
+img = imread('mars_small.png')
 
 ax.imshow(img, transform=plate, extent=[-180, 180, 90, -90])
 
 for rover, site in sites.items():
-    ax.plot(site['longitude'], site['latitude'], 'wo', transform=plate, ms=12, lw=0)
+    ax.plot(
+        site['longitude'],
+        site['latitude'],
+        'o',
+        transform=plate,
+        ms=12,
+        mew=0,
+        color=site.get('color', 'w'),
+    )
     ax.text(
         x=site['longitude'] + site.get('lon_offset', 0),
         y=site['latitude'] + site.get('lat_offset', 5),
@@ -40,5 +48,4 @@ for rover, site in sites.items():
     )
 
 fig.tight_layout()
-
-plt.show()
+fig.savefig('mars_landing_sites.png', dpi=200)

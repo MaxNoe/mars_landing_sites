@@ -43,3 +43,24 @@ Sojourner:
   ha_align: 'right'
   va_align: 'bottom'
   color: 'lightgray'
+
+"Beagle 2":
+  latitude: 11.526
+  longitude: 90.42
+  color: 'lightgray'
+
+"Mars 2":
+  latitude: -45
+  longitude: -313
+  color: 'lightgray'
+
+"Mars 3":
+  latitude: -45
+  longitude: 202
+  color: 'lightgray'
+
+"Mars 6":
+  latitude: -23.9
+  longitude: -19.42
+  color: 'lightgray'
+
