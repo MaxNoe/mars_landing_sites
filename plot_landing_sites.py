@@ -25,6 +25,7 @@ with open('sites.yaml') as f:
 img = imread('mars_small.png')
 
 ax.imshow(img, transform=plate, extent=[-180, 180, 90, -90])
+ax.background_patch.set_fill(False)
 
 for rover, site in sites.items():
     ax.plot(
